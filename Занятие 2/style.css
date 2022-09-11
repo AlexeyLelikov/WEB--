@@ -1,0 +1,20 @@
+.text-style {
+    color: brown;
+    text-align: center;
+    font-family: Arial;
+    font-style: italic;
+}
+.img-style {
+    width: 200px;
+    height: 200px;
+    display:block;
+    margin:auto;
+}
+.text-style-box {
+    width: 500px;
+    color: brown;
+    border-style: solid;
+    text-align: center;
+    display:block;
+    margin:auto;
+}
