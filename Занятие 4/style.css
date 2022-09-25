@@ -1,0 +1,17 @@
+.block1 {
+    border-style: dotted;
+    width: 300px;
+    color: darkcyan;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 30px 0 5px;
+}
+
+.block2 {
+    border-style: solid;
+    background-color: rosybrown;
+    font-family: cursive;
+    display: inline-block;
+    width: 400px;
+    padding: 20px; 
+}
