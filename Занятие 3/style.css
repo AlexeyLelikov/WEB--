@@ -1,0 +1,15 @@
+.block1 {
+    border-style: dotted;
+    background-color: rgb(187, 102, 102);
+    display: inline-block;
+    font-family: cursive;
+    vertical-align: top;
+    width: 300px;
+}
+.block2 {
+    border-style: solid;
+    background-color: rgb(200, 200, 220);
+    display: inline-block;
+    vertical-align: top;
+    width: 500px;
+}
