@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Графика в Canvas</title>
+</head>
+<body>
+    <canvas id = "myCanvas" height= "300" width="300"
+        style = "border: 1px solid #000000;">
+    </canvas>
+    <script> 
+        var canv = document.getElementById("myCanvas");
+        var contx = canv.getContext("2d");
+        contx.fillStyle = "#008B8B";
+        contx.fillRect(0,100,100,50);
+        let position = 0;
+
+        setInterval(function (){
+            contx.clearRect(0,0,300,300);
+            position++;
+            contx.fillRect(position,100,100,50);
+            if (position == 300){
+                position = 0;
+            }
+        },10);
+
+    </script>
+</body>
+</html>
