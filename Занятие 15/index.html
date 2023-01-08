@@ -12,13 +12,13 @@
         var canv = document.getElementById("myCanvas");
         var contx = canv.getContext("2d");
         contx.fillStyle = "#008B8B";
-        contx.fillRect(0,100,100,50);
+        contx.fillRect(100,0,100,50);
         let position = 0;
 
         setInterval(function (){
             contx.clearRect(0,0,300,300);
             position++;
-            contx.fillRect(position,100,100,50);
+            contx.fillRect(100,position,100,50);
             if (position == 300){
                 position = 0;
             }
