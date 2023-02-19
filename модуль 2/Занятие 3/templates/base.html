@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block header -%}
+        {% if title -%}
+         <title>{{title}}</title>
+        {% else -%}
+        <title>Сайт про прогроммирование</title>
+        {% endif %}
+    {% endblock %}
+</head>
+<body>
+    {% block content -%}
+        {% if title -%}
+            <h1>{{title}}</h1>
+        {% else -%}
+            <h1>Сайт про прогроммирование</h1>
+        {% endif %}
+        {% block mainmenu -%}
+            <ul>
+            {% for m in menu %}
+                <li> <a href = {{m}}> {{m}} </a> </li>
+            {% endfor %}
+            </ul>
+        {% endblock %}
+    {% endblock %}
+</body>
+</html>
